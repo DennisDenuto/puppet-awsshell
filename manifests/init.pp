@@ -1,3 +1,8 @@
 class awsshell {
-  anchor { 'Hello_World': }
+  include python
+
+  python::pip { 'aws-shell':
+   virtualenv => '/opt/boxen/homebrew',
+  }
+
 }

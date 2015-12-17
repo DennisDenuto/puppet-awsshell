@@ -4,6 +4,7 @@ require 'spec_helper'
 # or read http://rspec-puppet.com/tutorial/
 describe 'awsshell' do
   it do
-    should contain_anchor('Hello_World')
+    #should contain_class("awsshell::deps")
+    #should contain_exec('pip install aws-shell')
   end
 end
